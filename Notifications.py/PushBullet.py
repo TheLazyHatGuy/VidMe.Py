@@ -2,7 +2,6 @@ import requests
 import pprint
 import json
 import config
-#https://vid.me/oauth/authorize?client_id=khLRjt0oQrI4hKUkUWJFveXEd47VcymF&redirect_uri=http://flyingtoilet.co.uk&scopes=albums%20account
 #prints everything needed
 def printr(r):
     print("======PB BREAK======")
