@@ -5,13 +5,6 @@ import config
 import pprint
 import PushBullet as PB
 
-file = open("notifs.txt", "r")
-
-notifs = json.loads(file.read())
-NotifCount= notifs['unreadCount']
-
-unread = int(NotifCount)
-
 def NotifRead(ID):
     headers = {'Authorization': 'Basic', 'AccessToken': config.Token}
     url = 'https://api.vid.me/notifications/mark-read'
@@ -42,6 +35,12 @@ def PBPipe(NTT, Message, URL):
     print("===PB Pipe Break===")
     return
 def runnotifs():
+    file = open("notifs.txt", "r")
+
+    notifs = json.loads(file.read())
+    NotifCount= notifs['unreadCount']
+
+    unread = int(NotifCount)
     if (unread == 0):
         print ("No Unread Notifications")
     elif (unread >= 1):
