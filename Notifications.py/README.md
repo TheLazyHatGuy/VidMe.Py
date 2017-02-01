@@ -1,5 +1,5 @@
-# VidMe.Py
-What I have managed to do with the Vid.Me API so far.
+# Notifications.Py
+A script for pushing unread VidMe notification to PushBullet
 
 [Check me out on Vid.Me](https://vid.me/TheLazyHatGuy)
 ##Setup
