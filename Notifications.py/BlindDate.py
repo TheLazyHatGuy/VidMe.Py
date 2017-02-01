@@ -52,7 +52,8 @@ def runnotifs():
                 NotifID = notifs['notifications'][notif]['notification_id']
                 NotifType = notifs['notifications'][notif]['type']
                 NotifUserName = notifs['notifications'][notif]['actor']['displayname']
-
+                if (NotifUserName == 'None'):
+                    NotifUserName = notifs['notifications'][notif]['actor']['username']
                 print ("ID - ",NotifID)
                 print ("Type - ",NotifType)
                 print ("User Name - ",NotifUserName)
@@ -135,6 +136,18 @@ def runnotifs():
                     PBPipe(NTT='Someone mentioned you', Message=Message, URL=NotifCommentURL)
 
                     notif = notif -1
+                    NotifRead(ID=NotifID)
+                elif (NotifType == 'tipped'):
+                    NotifVidName = notifs['notifications'][notif]['video']['title']
+                    print("Video Name - ", NotifVidName)
+                    NotifVidUrl = notifs['notifications'][notif]['video']['full_url']
+                    print("Video URL - ", NotifVidUrl)
+                    print("Someone tipped your video")
+
+                    Message = (NotifUserName + " tipped your video " + NotifVidName)
+                    PBPipe(NTT='Someone tipped your video', Message=Message, URL=NotifVidURL)
+
+                    notif = notif - 1
                     NotifRead(ID=NotifID)
                 else:
                     print ("ERROR - Tell TheLazyHatGuy he needs to add this Notification Type:",NotifType)
