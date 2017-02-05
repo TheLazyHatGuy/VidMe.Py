@@ -1,4 +1,5 @@
 # VidMe.Py
+[![Powered by VidMe](vidme_logos/logo_light_bg_powered_by.png)](https://vid.me/TheLazyHatGuy)
 What I have managed to do with the Vid.Me API so far.
 
 [Check me out on Vid.Me](https://vid.me/TheLazyHatGuy)
