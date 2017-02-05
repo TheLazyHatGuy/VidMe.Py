@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 # VidMe.Py <a href="https://vid.me/TheLazyHatGuy"><img src="vidme_logos/logo_light_bg_powered_by.png" alt="Powered by VidMe" height="30"></a>
-=======
-# VidMe.Py
-<a href="https://vid.me/TheLazyHatGuy"><img src="vidme_logos/logo_light_bg_powered_by.png" alt="Powered by VidMe" height="24"></a>
->>>>>>> reformat
+
 What I have managed to do with the Vid.Me API so far.
 
 [Check me out on Vid.Me](https://vid.me/TheLazyHatGuy)
